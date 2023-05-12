@@ -14,8 +14,8 @@
 		"test:web": "vitest run",
 		"test:rust": "cargo test --manifest-path='src-tauri/Cargo.toml'",
 		"test": "concurrently \"npm:test:*\"",
-		"lint": "prettier --check ./src && eslint ./src",
-		"format": "prettier --write ./src",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
 		"prepare": "husky install"
 	},
 	"devDependencies": {
